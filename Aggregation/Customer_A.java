@@ -7,6 +7,7 @@ package Aggregation;
  Time: 12.25 pm
  *******************************/
 public class Customer {
+    public boolean customerName;
     String custName;
     public Customer(String custName) {
         this.custName = custName;
