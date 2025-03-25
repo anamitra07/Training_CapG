@@ -1,0 +1,10 @@
+package March_25th_Inheritance;
+
+public class Vehicle {
+    String name;
+    String engineType;
+
+    public void display() {
+        System.out.println(this.name + " " + this.engineType);
+    }
+}

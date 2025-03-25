@@ -14,8 +14,7 @@ public class Driver {
 //        p=null;
 //        System.out.println(sim.phoneNumber);
 
-        // Bank as bank name, cust as customername
-        Customer cust = new Customer("Raj");
+        Customer_A cust = new Customer_A("Raj");
         Bank b = new Bank("IDBI Bank", cust);
         b.display();
         b=null;

@@ -8,9 +8,9 @@ package Aggregation;
  *******************************/
 public class Bank {
     String bankName;
-    Customer cust;
+    Customer_A cust;
 
-    public Bank(String bankName, Customer cust) {
+    public Bank(String bankName, Customer_A cust) {
         this.bankName = bankName;
         this.cust = cust;
     }
