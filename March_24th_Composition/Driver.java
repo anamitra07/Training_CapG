@@ -5,7 +5,7 @@ public class Driver {
 //        Car c = new Car("Ferrari","V8");
 //        c.display();
 
-//        Phone p = new Phone("Iphone", "Li-Po");
-//        p.display();
+        Phone p = new Phone("Iphone", "Li-Po");
+        p.display();
     }
 }
