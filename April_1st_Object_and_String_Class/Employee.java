@@ -29,7 +29,4 @@ public class Employee implements Cloneable{
         return (int) (this.id + this.salary + this.name.hashCode());
     }
 
-    public Employee cloneEmployee() {
-        
-    }
 }
