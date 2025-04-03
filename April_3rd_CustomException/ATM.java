@@ -1,6 +1,6 @@
-package March_22nd_Encapsulation;
+package April_3rd_CustomException;
 
-public class NetBank {
+public class ATM {
     private int currentBalance = 50000;
     private int pin = 1234;
 
@@ -10,7 +10,7 @@ public class NetBank {
             System.out.println("\nAdded amount: "+deposit);
         }
         else {
-            System.out.println("Invalid Pin entered");
+            throw new InvalidPinException("Invalid Pin entered");
         }
     }
 
@@ -19,7 +19,7 @@ public class NetBank {
             System.out.println("\nCurrent Balance: "+currentBalance);
         }
         else {
-            System.out.println("Invalid Pin entered");
+            throw new InvalidPinException("Invalid Pin entered");
         }
     }
 
@@ -28,12 +28,13 @@ public class NetBank {
             if (currentBalance >= withdraw) {
                 currentBalance -= withdraw;
                 System.out.println("\nWithdrawal amount: "+withdraw);
-            } else {
-                System.out.println("Insufficient Balance");
+            }
+            else {
+                throw new InsufficientBalanceException("Insufficient Balance");
             }
         }
         else {
-            System.out.println("Invalid Pin entered");
+            throw new InvalidPinException("Invalid Pin entered");
         }
     }
 }
