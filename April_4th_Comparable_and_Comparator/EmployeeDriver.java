@@ -1,4 +1,4 @@
-package Comparable_and_Comparator;
+package April_4th_Comparable_and_Comparator;
 
 public class EmployeeDriver {
     public static void main(String[] args) {

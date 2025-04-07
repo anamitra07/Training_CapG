@@ -1,4 +1,4 @@
-package Comparable_and_Comparator;
+package April_4th_Comparable_and_Comparator;
 
 import java.util.Arrays;
 
