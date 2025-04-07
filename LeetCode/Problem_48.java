@@ -5,9 +5,9 @@ package LeetCode;
  Date: 21-03-2025
  Time: 09:31
  ******************************/
-public class Turn_Image {
+public class Problem_48 {
     public static void main(String[] args) {
-        int[][] arr = TwoD.input();
+        int[][] arr = Print.input();
         solution(arr);
     }
 

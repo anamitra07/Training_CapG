@@ -7,10 +7,10 @@ import java.lang.Math;
  Time: 16:05
  ******************************/
 
-public class Container_With_Most_Water {
+public class Problem_11 {
     public static void main(String[] args) {
-        int size = Input_1d.input_size();
-        int arr[] = Input_1d.input_integer(size);
+        int size = Input.input_size();
+        int arr[] = Input.input_integer(size);
         maxArea(arr);
     }
 

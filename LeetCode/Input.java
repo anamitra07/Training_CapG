@@ -4,11 +4,23 @@ import java.util.Scanner;
 
 /*****************************
  Created by: Anamitra Kanjilal
- Date: 21-03-2025
- Time: 09:32
+ Date: 13-03-2025
+ Time: 12:37
  ******************************/
-public class TwoD {
-    public static int[][] input() {
+
+public class Input {
+    public static int[] input_1d() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        System.out.println("Enter values: ");
+        for(int i=0;i<size;i++)
+            arr[i] = sc.nextInt();                      // taking inputs for array
+        return arr;
+    }
+
+    public static int[][] input_2d() {
         Scanner sc = new Scanner(System.in);
         System.out.print("\nEnter number of rows and columns: ");
         int row = sc.nextInt();
@@ -20,13 +32,5 @@ public class TwoD {
             }
         }
         return arr;
-    }
-
-    public static void print_for(int[][] arr) {
-        for(int i=0;i<arr.length;i++) {
-            for(int j=0;j<arr[i].length;j++)
-                System.out.print(arr[i][j] + " ");
-            System.out.println();
-        }
     }
 }

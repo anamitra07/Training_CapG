@@ -16,8 +16,8 @@ public class Problem_852 {
     }
 
     public static void main(String[] args) {
-        int size = Input_1d.input_size();
-        int[] arr = Input_1d.input_integer(size);
+        int size = Input.input_size();
+        int[] arr = Input.input_integer(size);
         System.out.println(peakIndexInMountainArray(arr));
     }
 }
