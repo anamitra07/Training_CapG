@@ -1,6 +1,6 @@
-package LinkedList;
+package April_7th_8th_LinkedList;
 
-public class Singly_Llist {
+public class Singly {
     Node head;
     Node tail;
     static int count;
@@ -25,7 +25,7 @@ public class Singly_Llist {
         }
     }
 
-    public void insert_at_position(int pos, int value) {
+    public void insertAt(int pos, int value) {
 
         // checking if position is within the size or not
         if(pos<1 || pos>count+1)
@@ -64,21 +64,6 @@ public class Singly_Llist {
         }
     }
 
-    public void update(int pos,int value) {
-
-        // creating a pointer 'ptr' for traversing through the list
-        Node ptr = this.head;
-        if(pos>count)
-            System.err.println("\nNo data present at specified position.");
-        else {
-            for(int currIndex = 1 ; currIndex <= count ; currIndex++) {
-                if (currIndex == pos)
-                    ptr.data = value;
-                ptr = ptr.next;
-            }
-        }
-    }
-
     public void delete(int pos) {
 
         if(pos<1 || pos>count) {
@@ -100,6 +85,21 @@ public class Singly_Llist {
             currIndex++;
         }
         ptr.next = ptr.next.next;
+    }
+
+    public void update(int pos,int value) {
+
+        // creating a pointer 'ptr' for traversing through the list
+        Node ptr = this.head;
+        if(pos>count)
+            System.err.println("\nNo data present at specified position.");
+        else {
+            for(int currIndex = 1 ; currIndex <= count ; currIndex++) {
+                if (currIndex == pos)
+                    ptr.data = value;
+                ptr = ptr.next;
+            }
+        }
     }
 
     public void display() {

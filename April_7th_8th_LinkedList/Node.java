@@ -1,4 +1,4 @@
-package LinkedList;
+package April_7th_8th_LinkedList;
 
 public class Node {
     int data;
