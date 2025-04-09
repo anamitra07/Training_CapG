@@ -2,12 +2,12 @@ package April_9th_Queue;
 
 import java.util.Scanner;
 
-public class Driver_UsingArrays {
+public class Driver_QueueUsingArrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("\nEnter size of queue: ");
         int size = sc.nextInt();
-        UsingArrays queue = new UsingArrays(size);
+        QueueUsingArrays queue = new QueueUsingArrays(size);
         boolean flag = true;
         while(flag) {
             System.out.println("\n1. Enqueue\n2. Dequeue\n3. Peek\n4. Display\n5. Check isEmpty\n6. Exit");

@@ -1,8 +1,7 @@
-package April_9th_Stack;
+package April_9th_Queue;
 
 public class Node {
     int data;
-    static int count;
     Node next;
 
     Node(int data) {

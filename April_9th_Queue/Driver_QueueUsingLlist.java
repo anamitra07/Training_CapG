@@ -2,10 +2,10 @@ package April_9th_Queue;
 
 import java.util.Scanner;
 
-public class Driver_UsingLlist {
+public class Driver_QueueUsingLlist {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        UsingLlist queue = new UsingLlist();
+        QueueUsingLlist queue = new QueueUsingLlist();
         boolean flag = true;
         while(flag) {
             System.out.println("\n1. Enqueue\n2. Dequeue\n3. Peek\n4. Display\n5. Check isEmpty\n6. Exit");
@@ -21,15 +21,15 @@ public class Driver_UsingLlist {
 //                case 2:
 //                    queue.pop();
 //                    break;
-//                case 3:
-//                    queue.peek();
-//                    break;
-                case 4:
-                    //queue.display();
+                case 3:
+                    queue.peek();
                     break;
-//                case 5:
-//                    queue.isEmpty();
-//                    break;
+                case 4:
+                    queue.display();
+                    break;
+                case 5:
+                    queue.isEmpty();
+                    break;
                 case 6:
                     flag = false;
                     break;

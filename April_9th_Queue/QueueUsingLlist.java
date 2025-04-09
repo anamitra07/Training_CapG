@@ -1,6 +1,6 @@
 package April_9th_Queue;
 
-public class UsingLlist {
+public class QueueUsingLlist {
     Node front;
     Node rear;
     static int count;
@@ -19,9 +19,16 @@ public class UsingLlist {
         }
     }
 
+    public void peek() {
+        if(front==null)
+            System.out.println("\nQueue is empty!!");
+        else
+            System.out.println("Element at the front is: "+front.data);
+    }
+
     public void display() {
         if(rear==null)
-            System.out.println("\nStack is empty!!");
+            System.out.println("\nQueue is empty!!");
         else {
             Node ptr = this.front;
             System.out.println("\nElements are: ");
@@ -30,5 +37,12 @@ public class UsingLlist {
                 ptr = ptr.next;
             }
         }
+    }
+
+    public void isEmpty() {
+        if(front==null)
+            System.out.println("\nQueue is empty!!");
+        else
+            System.out.println("\nQueue is not empty!!");
     }
 }

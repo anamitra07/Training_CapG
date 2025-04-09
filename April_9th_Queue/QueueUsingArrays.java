@@ -1,12 +1,12 @@
 package April_9th_Queue;
 
-public class UsingArrays {
+public class QueueUsingArrays {
     static int front=-1;
     static int rear=-1;
     int size;
     int[] queue;
 
-    public UsingArrays(int size) {
+    public QueueUsingArrays(int size) {
         this.size = size;
         this.queue = new int[size];
     }
