@@ -35,7 +35,7 @@ public class Driver {
             System.out.println(e.getValue());
         }
 
-        // Here, e contains all the Keys along with its values.
+        // Here, e contains all the keys along with its values.
 
         // Remove a key from the HashMap
         map.remove("China");
