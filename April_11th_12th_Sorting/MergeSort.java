@@ -1,4 +1,4 @@
-package April_11th_Sorting;
+package April_11th_12th_Sorting;
 
 public class MergeSort {
         // Merges two subarrays of arr[].
