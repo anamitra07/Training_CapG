@@ -1,4 +1,4 @@
-package Task;
+package April_13th_Generics;
 
 public class Student<T> {
     T obj;
