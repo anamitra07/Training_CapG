@@ -1,11 +1,11 @@
 package HashMapUsingObjects;
 
-public class Entry {
-    static Integer key;
-    static Integer value;
+public class Entry<K,V> {
+    K key;
+    V value;
     Entry next;
 
-    Entry(Integer key, Integer value) {
+    Entry(K key, V value) {
         this.key = key;
         this.value = value;
         this.next = null;

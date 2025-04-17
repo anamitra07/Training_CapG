@@ -1,6 +1,6 @@
 package HashMapUsingObjects;
 
-public class HashMap_Objects {
+public class HashMap_Objects<K,V> {
     private Entry[] bucket;
     static final int size = 16;
 
@@ -8,17 +8,11 @@ public class HashMap_Objects {
         bucket = new Entry[size];
     }
 
-    public int getBucketIndex(Integer key) {
-        return Math.abs(Integer.hashCode(key)) % size;
+    public <K> int getBucketIndex(K key) {
+        return Math.abs(key.hashCode()) % size;
     }
 
-    public class KeyNotFoundException extends RuntimeException {
-        public KeyNotFoundException(String message) {
-            super(message);
-        }
-    }
-
-    public void put(Integer key, Integer value) {
+    public <K,V> void put(K key, V value) {
 
         // fetching index value of 'key' value
         int index = getBucketIndex(key);
@@ -37,7 +31,7 @@ public class HashMap_Objects {
                     ptr.value = value;
                     return;
                 }
-                if(ptr.next.equals(null)) {
+                else if(ptr.next.equals(null)) {
                     ptr.next = entry;
                     return;
                 }
@@ -46,13 +40,13 @@ public class HashMap_Objects {
         }
     }
 
-    public Integer get(Integer key) {
+    public V get(K key) {
         int index = getBucketIndex(key);
         Entry ptr = bucket[index];
 
         while (ptr != null) {
             if (ptr.key.equals(key)) {
-                return ptr.value;
+                return (V) ptr.value;
             }
             ptr = ptr.next;
         }
@@ -93,4 +87,18 @@ public class HashMap_Objects {
         }
     }
 
+    public <K,V> void display() {
+        System.out.println();
+        for (int i = 0; i < size; i++) {
+            Entry ptr = bucket[i];
+            if (ptr != null) {
+                System.out.print("Bucket " + i + ": ");
+                while (ptr != null) {
+                    System.out.print("[" + ptr.key + ":" + ptr.value + "]");
+                    ptr = ptr.next;
+                }
+                System.out.println();
+            }
+        }
+    }
 }

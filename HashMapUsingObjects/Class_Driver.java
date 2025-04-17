@@ -2,10 +2,10 @@ package HashMapUsingObjects;
 
 import java.util.Scanner;
 
-public class Class_Driver {
+public class Class_Driver<K,V> {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        HashMap_Objects hashmap = new HashMap_Objects();
+        HashMap_Objects<Object, Object> hashmap = new HashMap_Objects<>();
         boolean flag = true;
 
         while (flag) {
@@ -21,9 +21,9 @@ public class Class_Driver {
             switch (choice) {
                 case 1: {
                     System.out.print("Enter key: ");
-                    Integer putKey = sc.nextInt();
+                    Object putKey = sc.next();
                     System.out.print("Enter value: ");
-                    Integer putValue = sc.nextInt();
+                    Object putValue = sc.next();
                     hashmap.put(putKey, putValue);
                     System.out.println("Key-Value pair inserted/updated.");
                     break;
@@ -31,9 +31,9 @@ public class Class_Driver {
 
                 case 2: {
                     System.out.print("Enter key: ");
-                    Integer getKey = sc.nextInt();
+                    Object getKey = sc.next();
                     try {
-                        Integer value = hashmap.get(getKey);
+                        Object value = hashmap.get(getKey);
                         System.out.println("Value for key " + getKey + ": " + value);
                     } catch (RuntimeException e) {
                         System.out.println(e.getMessage());
@@ -41,16 +41,16 @@ public class Class_Driver {
                     break;
                 }
 
-                case 3: {
-                    System.out.print("Enter key: ");
-                    int removeKey = sc.nextInt();
-                    hashmap.remove(removeKey);
-                    break;
-                }
-//
-//                case 4:
-//                    hashmap.display();
+//                case 3: {
+//                    System.out.print("Enter key: ");
+//                    Object removeKey = sc.nextInt();
+//                    hashmap.remove(removeKey);
 //                    break;
+//                }
+//
+                case 4:
+                    hashmap.display();
+                    break;
 
                 case 5:
                     flag = false;
