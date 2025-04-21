@@ -1,13 +1,13 @@
 package March_26th_Hierarchical_Inheritance;
 
-public class Vehicle {
+public class Vehicle_26th {
     private String vehicleNumber;
     private String brand;
     private String model;
     private double rentalPricePerDay;
     private boolean isAvailable;
 
-    public Vehicle(String vehicleNumber, String brand, String model, double rentalPricePerDay, boolean isAvailable) {
+    public Vehicle_26th(String vehicleNumber, String brand, String model, double rentalPricePerDay, boolean isAvailable) {
         this.vehicleNumber = vehicleNumber;
         this.brand = brand;
         this.model = model;

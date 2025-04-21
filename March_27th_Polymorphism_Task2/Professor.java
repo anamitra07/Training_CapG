@@ -9,7 +9,7 @@ public class Professor extends Person{
     }
 
     public void displayProfessorInfo() {
-        System.out.println("Student id: " + this.studentId);
+        System.out.println("Student id: " + this.specialization);
         super.displayInfo();
     }
 }
