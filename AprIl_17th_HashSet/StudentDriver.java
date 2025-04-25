@@ -1,4 +1,4 @@
-package Aprll_17th_HashSet;
+package AprIl_17th_HashSet;
 
 import java.util.HashSet;
 

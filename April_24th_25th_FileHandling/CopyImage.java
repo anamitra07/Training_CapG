@@ -1,9 +1,8 @@
-package April_24th_FileHandling;
+package April_24th_25th_FileHandling;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 
 public class CopyImage {
     public static void main(String[] args) throws Exception {
